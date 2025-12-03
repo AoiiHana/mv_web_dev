@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>Donation Form | PetsFirst</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/petsfirst_banner_logo.png" alt="PetsFirst logo banner, featuring the text PetsFirst in a cursive font alongside a line drawing of a woman and a dog seated next to each other in white on a blue background" width="600" height="150">
+        </header>
+        <section id="navigation">
+            <nav>
+                <a href="index.html" class="nav-main-item">Home</a>
+                <a href="cats.html" class="nav-main-item">Cats</a>
+                <a href="dogs.html" class="nav-main-item">Dogs</a>
+                <a href="small_pets.html" class="nav-main-item">Small Pets</a>
+                <a href="about.html" class="nav-main-item">About Us</a>
+                <a href="donate.html" class="nav-main-item">Donate</a>
+                <a href="contact.html" class="nav-main-item">Contact Us</a>
+            </nav>
+        </section>
+        <section id="body-text">
+            <h2>Donation Form</h2>
+            <div id="input-form">
+                <label for="name">Full Name:</label> <label for="email">Email Address:</label><br>
+                <input type="text" id="name" name="name" required> <input type="email" id="email" name="email" required><br><br><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="home">Home Address:</label><br>
+                <input type="text" id="home" name="home" required><br><br>
+
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" required><br><br>
+
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country" required><br><br>
+
+                <label for="amount">Donation Amount (USD):</label><br>
+                <input type="number" id="amount" name="amount" min="1" required><br><br>
+
+                <label for="payment-method">Payment Method:</label><br>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select><br><br>
+
+                <a href="thanks_for_donating.html" class="nav-main-item">Donate Now</a>
+            </div>
+        </section>
+    </body>
+</html>

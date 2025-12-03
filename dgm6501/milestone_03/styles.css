@@ -1,0 +1,304 @@
+/* this is built on the framework i had from snippet-03, but with significant changes to reflect the large amounts of new classes added and the need to make the website look good on both mobile and desktop*/
+@media screen and (min-width: 320px) {
+    body {
+        font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+        margin: 1rem;
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        touch-action: auto;
+    }  
+
+    header {
+        background-color: #000071;
+        color: white;
+        margin: -1rem -1rem 1rem -1rem;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin: 1rem;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    img {
+        height: auto; 
+        max-width: 100%;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 1rem 0;
+        align-items: center;
+    }
+
+    .page-tree {
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-content-1 {
+        background-color: rgb(245, 245, 245);
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .adoptables {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(211, 211, 211);
+        color: rgb(63, 63, 63);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .pet-listing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pet-listing img {
+        justify-self: center;
+        align-self: center;
+        width: auto;
+        height: auto;
+        max-width: 50%;
+        object-fit: cover;
+    }
+
+    .thin-border {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black; 
+    }
+
+    figcaption {
+        margin-left: 0;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    a {
+        color: #0779e3;
+        transition-property: color;
+        transition-duration: 300ms;
+    }
+
+    a:hover, a:focus {
+        text-decoration: underline;
+    }
+
+    .nav-main-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #0779e3;
+        background-color: #ffffff;
+        font-size: 1.25rem;
+        padding: 0.5rem 0.75rem;
+        text-decoration: none;
+        margin: 0.25rem 0;
+    }
+
+    .listing-title {
+        grid-column: 2;
+        justify-self: center;
+        align-self: top;
+    }
+
+    .nav-main-item:active, 
+    .nav-main-item:hover,
+    .nav-main-item:focus {
+        border: 4px solid black;
+    }
+
+    .nav-list-item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #0779e3;
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem;
+        text-decoration: none;
+        transition-property: background-color;
+        transition-duration: 0ms;
+        margin: 0.25rem;
+        grid-column: 2;
+        justify-self: center;
+        width: 50%;
+        height: 40px;
+    }
+
+
+
+    .nav-list-item:active, 
+    .nav-list-item:hover,
+    .nav-list-item:focus {
+        color: white;
+        background-color: rgb(175, 121, 226);
+    }
+
+    .nav-link-item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #0779e3;
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem;
+        text-decoration: none;
+        transition-property: background-color;
+        transition-duration: 0ms;
+        margin: 0.25rem;
+        width: 200px;
+        height: 40px;
+    }
+
+
+
+    .nav-link-item:active, 
+    .nav-link-item:hover,
+    .nav-link-item:focus {
+        color: white;
+        background-color: rgb(175, 121, 226);
+    }
+
+    input:hover, input:focus {
+        border-width: 3px;
+        border-style: solid;
+        border-color: #0779e3;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 1.5rem auto;
+        max-width: 1200px;
+    }
+
+    header {
+        margin: -2rem -2rem 2rem -2rem;
+        padding: 1.5rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav {
+        margin: 1rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: auto;
+    }
+
+    .site-title {
+        margin-bottom: 0.5rem;
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    .adoptables {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .pet-listing {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .pet-listing img {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        justify-self: center;
+        align-self: center;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+
+    }
+
+    /*so i didn't initially know why this wasn't working for both this + the large screens size, but through some trial and error (and some help from claude) i learned that inline-flex causes elements to display only according to the width of the content, which ofc meant that the image would never centre within the larger page. i changed it to a regular flex, and that fixed the problem.*/
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figcaption {
+        margin-left: 3rem;
+        text-align: center;
+    }
+
+
+    .nav-main-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.75rem;
+        margin: 0 0.5rem;
+    }
+}
