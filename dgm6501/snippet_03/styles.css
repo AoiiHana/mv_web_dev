@@ -1,0 +1,227 @@
+/* resources used for the basic format included claude, flexbox froggy, google gemini and MDN. claude's advice served as the basis for reworking the code to work in flexbox format; however, i went through and checked the flexbox styles to make sure they visually matched what i wanted, based on what I had learned from flexbox froggy*/
+
+@media screen and (min-width: 320px) {
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 1rem;
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+    }  
+
+    header {
+        background-color: black;
+        color: white;
+        margin: -1rem -1rem 1rem -1rem;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*this came from claude (w/some additional help courtesy of an inadvertent gemini overview on google search). i wasn't initially able to get the <hr> element to display properly. however, as gemini and later claude explained to me, <hr> has a default width of 0 if the flexbox orientation is through columns. therefore, according to claude i had to set the width to 100% to make sure it would display in full as well as align w/the other elements. using these styles i was able to get it to display properly*/
+    hr {
+        width: 100%;
+        align-self: stretch;
+        border: none;
+        border-top: 1px solid black;
+        margin: 1.5rem 0;
+    } 
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    img {
+        height: auto; 
+        max-width: 100%;
+        border-width: 4px;
+        border-style: solid;
+        border-color: black; 
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 1rem 0;
+        align-items: center;
+    }
+
+    .thin-border {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black; 
+    }
+
+    figcaption {
+        margin-left: 0;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    a {
+        color: #0779e3;
+        transition-property: color;
+        transition-duration: 300ms;
+    }
+
+    a:hover, a:focus {
+        color: rgb(175, 121, 226);
+    }
+
+    .nav-main-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #0779e3;
+        font-size: 1.25rem;
+        padding: 0.5rem 0.75rem;
+        text-decoration: none;
+    }
+
+    .nav-main-item:active, 
+    .nav-main-item:hover, 
+    .nav-main-item:focus {
+        border-width: 4px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    input:hover, input:focus {
+        border-width: 3px;
+        border-style: solid;
+        border-color: #0779e3;
+    }
+}
+
+
+/* the basic format for the additional screen sizes came from claude. to make sure it wasn't just feeding me a hallucination, i looked up the @media syntax on mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries. everything lined up, so i didn't rewrite the basic containers, however i *did* change some of the margins so they would better fit the visual style i wanted*/
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 1.5rem auto;
+        max-width: 1200px;
+    }
+
+    header {
+        margin: -2rem -2rem 2rem -2rem;
+        padding: 1.5rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* initially i couldn't get the margin to display properly underneath the site title. i tried a couple different solutions, but eventually got it to work by adding the class "site-title" to the h1 element w/in the header and specifying a margin-bottom of 0.5rem*/
+    .site-title {
+        margin-bottom: 0.5rem;
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    /*so i didn't initially know why this wasn't working for both this + the large screens size, but through some trial and error (and some help from claude) i learned that inline-flex causes elements to display only according to the width of the content, which ofc meant that the image would never centre within the larger page. i changed it to a regular flex, and that fixed the problem.*/
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figcaption {
+        margin-left: 3rem;
+        text-align: center;
+    }
+
+    .nav-main-item {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.75rem;
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        margin: 2rem auto;
+        max-width: 1600px;
+        font-size: 1.4rem;
+    }
+
+    header {
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-title {
+        margin-bottom: 0.5rem;
+    }
+
+    hr {
+        margin: 2.5rem 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figcaption {
+        margin-left: 5rem;
+        text-align: center;
+    }
+
+    .nav-main-item {
+        font-size: 1.75rem;
+        padding: 0.75rem 1.25rem;
+    }
+}

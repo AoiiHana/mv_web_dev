@@ -1,0 +1,92 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+header {
+    background-color: black;
+    color: white;
+    margin: -1rem -1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2.25rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+    border-width: 4px;
+	border-style: solid;
+	border-color: black; 
+}
+
+figure {
+    display: inline-block;
+    margin: 0;
+    align-items: center;
+}
+
+.thin-border {
+    border-width: 1px;
+	border-style: solid;
+	border-color: black; 
+}
+
+figcaption {
+    margin-left: 5rem;
+	text-align: match-parent;
+}
+
+a {
+    color:#0779e3;
+    transition-property: color;
+    transition-duration: 0ms;
+}
+
+a:hover, a:focus {
+    color:rgb(175, 121, 226);
+}
+
+.nav-main-item {
+	display: inline-block;
+	color: white;
+	background-color: #0779e3;
+	font-size: 1.5rem;
+	padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    transition-property: background-color;
+	transition-duration: 0s;
+}
+
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: white;
+	background-color: rgb(175,121,226);
+}
+
+input:hover, input:focus {
+    border-width: 3;
+    border-style: solid;
+    border-color:#0779e3;
+}
+
+

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../practice/part2"
+		},
+		{
+			"path": "../practice"
+		},
+		{
+			"name": "MV Web Dev",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "practice"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "project_01"
+		},
+		{
+			"path": "snippet_01"
+		},
+		{
+			"path": "../dgm6109/project2"
+		},
+		{
+			"path": "../../../Downloads/layout_starter_kit"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project_01"
+	}
+}

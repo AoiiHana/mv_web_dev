@@ -1,0 +1,61 @@
+body {
+    background-color: #272a70;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+h1 {
+    font-size:3rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover, img:focus {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    margin-bottom: 1;
+    transition-property: ease-out;
+    transition-duration: .2s;
+}
+
+a {
+    color:#ffffff;
+}
+
+a:hover, a:focus {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.nav-main-item {
+    background-color: rgb(244, 105, 193);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    transition-property:background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.nav-main-item:hover, .nav-main-item:focus {
+    color: white;
+    background-color:#9c09c1;
+}
+
+/*welcome to my kitchen
+    we have bananies
+    and avocaydies*/
+
