@@ -82,6 +82,10 @@
         border-radius: 8px;
     }
 
+    .section-content-2 h2 {
+        padding-bottom: 0.5rem;
+    }
+
     .section-content-3 {
         background-color: rgb(211, 211, 211);
         margin-bottom: 0.5rem;
